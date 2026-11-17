@@ -8,6 +8,10 @@ Each model is a JSON parts list. The page draws it with three.js, moves every pa
 
 ## Try it
 
+Open the demo: https://k-maass.github.io/fable-of-contents/
+
+Or run it yourself:
+
 ```bash
 python3 -m http.server 8000
 ```
