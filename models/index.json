@@ -5,5 +5,26 @@
   "title": "Graphics card",
   "parts": 13,
   "summary": "A generic three-fan graphics card: where the heat goes, and what sits under the cooler."
+ },
+ {
+  "id": "rocket-engine",
+  "file": "rocket-engine.json",
+  "title": "Liquid rocket engine",
+  "parts": 13,
+  "summary": "A generic gas-generator rocket engine: how pumped propellant turns into thrust in a chamber and bell nozzle."
+ },
+ {
+  "id": "bike-gears",
+  "file": "bike-gears.json",
+  "title": "Bicycle rear gear system",
+  "parts": 18,
+  "summary": "A generic rear derailleur with a 5-sprocket cassette and a short run of chain, showing how a cable pull moves the chain from one sprocket to the next."
+ },
+ {
+  "id": "espresso-machine",
+  "file": "espresso-machine.json",
+  "title": "Espresso machine",
+  "parts": 18,
+  "summary": "A generic single-boiler pump espresso machine, following the water from the tank through pump and boiler to the cup."
  }
 ]

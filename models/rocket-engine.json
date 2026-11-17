@@ -1,0 +1,2078 @@
+{
+ "title": "Liquid rocket engine",
+ "size": "1250 x 1700 x 1250 mm",
+ "summary": "A generic gas-generator rocket engine: how pumped propellant turns into thrust in a chamber and bell nozzle.",
+ "note": "A generic, simplified engine written by an AI after reading two public pages; the part list and layout follow those, but sizes, plumbing and the wall coolant routing are not checked against a real engine.",
+ "sources": [
+  {
+   "title": "Liquid-propellant rocket (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Liquid-propellant_rocket"
+  },
+  {
+   "title": "Rocket thrust (NASA Glenn)",
+   "url": "https://www.grc.nasa.gov/www/k-12/airplane/rocket.html"
+  }
+ ],
+ "parts": [
+  {
+   "id": "gimbal",
+   "name": "Gimbal mount",
+   "stage": 2,
+   "explode": [
+    0,
+    520,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "cyl",
+     "r": 95,
+     "h": 36,
+     "axis": "y",
+     "pos": [
+      0,
+      1515,
+      0
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "cyl",
+     "r": 8,
+     "h": 14,
+     "axis": "y",
+     "pos": [
+      78,
+      1536,
+      0
+     ],
+     "radial": 8,
+     "material": "steel"
+    },
+    {
+     "type": "sphere",
+     "r": 62,
+     "pos": [
+      0,
+      1565,
+      0
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "plate",
+     "size": [
+      360,
+      28,
+      360
+     ],
+     "round": 30,
+     "pos": [
+      0,
+      1632,
+      0
+     ],
+     "material": "darksteel",
+     "holes": [
+      {
+       "x": -140,
+       "z": -140,
+       "r": 10
+      },
+      {
+       "x": -140,
+       "z": 140,
+       "r": 10
+      },
+      {
+       "x": 140,
+       "z": -140,
+       "r": 10
+      },
+      {
+       "x": 140,
+       "z": 140,
+       "r": 10
+      }
+     ]
+    },
+    {
+     "type": "box",
+     "size": [
+      44,
+      44,
+      56
+     ],
+     "pos": [
+      -150,
+      1676,
+      0
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "box",
+     "size": [
+      44,
+      44,
+      56
+     ],
+     "pos": [
+      150,
+      1676,
+      0
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "cyl",
+     "r": 10,
+     "h": 80,
+     "axis": "z",
+     "pos": [
+      -150,
+      1676,
+      0
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 10,
+     "h": 80,
+     "axis": "z",
+     "pos": [
+      150,
+      1676,
+      0
+     ],
+     "material": "steel"
+    }
+   ]
+  },
+  {
+   "id": "head",
+   "name": "Injector head",
+   "stage": 1,
+   "explode": [
+    0,
+    320,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "lathe",
+     "profile": [
+      [
+       245.0,
+       1380
+      ],
+      [
+       244.2,
+       1390
+      ],
+      [
+       240.0,
+       1405
+      ],
+      [
+       232.1,
+       1420
+      ],
+      [
+       220.0,
+       1435
+      ],
+      [
+       203.0,
+       1450
+      ],
+      [
+       179.6,
+       1465
+      ],
+      [
+       147.0,
+       1480
+      ],
+      [
+       96.0,
+       1495
+      ],
+      [
+       0,
+       1495
+      ]
+     ],
+     "axis": "y",
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 270,
+     "h": 26,
+     "axis": "y",
+     "pos": [
+      0,
+      1393,
+      0
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "cyl",
+     "r": 9,
+     "h": 16,
+     "axis": "y",
+     "pos": [
+      255,
+      1414,
+      0
+     ],
+     "radial": 24,
+     "material": "steel"
+    },
+    {
+     "type": "torus",
+     "R": 150,
+     "r": 9,
+     "axis": "y",
+     "pos": [
+      0,
+      1440,
+      0
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "cyl",
+     "r": 30,
+     "h": 30,
+     "axis": "x",
+     "pos": [
+      214,
+      1440,
+      0
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 30,
+     "h": 30,
+     "axis": "x",
+     "pos": [
+      -214,
+      1440,
+      0
+     ],
+     "material": "steel"
+    }
+   ]
+  },
+  {
+   "id": "plate",
+   "name": "Injector plate",
+   "stage": 3,
+   "explode": [
+    0,
+    160,
+    0
+   ],
+   "pos": [
+    0,
+    1365,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "plate",
+     "size": [
+      464,
+      30,
+      464
+     ],
+     "round": 232,
+     "material": "brass",
+     "holes": [
+      {
+       "x": 55.0,
+       "z": 0.0,
+       "r": 5
+      },
+      {
+       "x": 47.6,
+       "z": 27.5,
+       "r": 5
+      },
+      {
+       "x": 27.5,
+       "z": 47.6,
+       "r": 5
+      },
+      {
+       "x": 0.0,
+       "z": 55.0,
+       "r": 5
+      },
+      {
+       "x": -27.5,
+       "z": 47.6,
+       "r": 5
+      },
+      {
+       "x": -47.6,
+       "z": 27.5,
+       "r": 5
+      },
+      {
+       "x": -55.0,
+       "z": 0.0,
+       "r": 5
+      },
+      {
+       "x": -47.6,
+       "z": -27.5,
+       "r": 5
+      },
+      {
+       "x": -27.5,
+       "z": -47.6,
+       "r": 5
+      },
+      {
+       "x": -0.0,
+       "z": -55.0,
+       "r": 5
+      },
+      {
+       "x": 27.5,
+       "z": -47.6,
+       "r": 5
+      },
+      {
+       "x": 47.6,
+       "z": -27.5,
+       "r": 5
+      },
+      {
+       "x": 105.0,
+       "z": 0.0,
+       "r": 5
+      },
+      {
+       "x": 101.4,
+       "z": 27.2,
+       "r": 5
+      },
+      {
+       "x": 90.9,
+       "z": 52.5,
+       "r": 5
+      },
+      {
+       "x": 74.2,
+       "z": 74.2,
+       "r": 5
+      },
+      {
+       "x": 52.5,
+       "z": 90.9,
+       "r": 5
+      },
+      {
+       "x": 27.2,
+       "z": 101.4,
+       "r": 5
+      },
+      {
+       "x": 0.0,
+       "z": 105.0,
+       "r": 5
+      },
+      {
+       "x": -27.2,
+       "z": 101.4,
+       "r": 5
+      },
+      {
+       "x": -52.5,
+       "z": 90.9,
+       "r": 5
+      },
+      {
+       "x": -74.2,
+       "z": 74.2,
+       "r": 5
+      },
+      {
+       "x": -90.9,
+       "z": 52.5,
+       "r": 5
+      },
+      {
+       "x": -101.4,
+       "z": 27.2,
+       "r": 5
+      },
+      {
+       "x": -105.0,
+       "z": 0.0,
+       "r": 5
+      },
+      {
+       "x": -101.4,
+       "z": -27.2,
+       "r": 5
+      },
+      {
+       "x": -90.9,
+       "z": -52.5,
+       "r": 5
+      },
+      {
+       "x": -74.2,
+       "z": -74.2,
+       "r": 5
+      },
+      {
+       "x": -52.5,
+       "z": -90.9,
+       "r": 5
+      },
+      {
+       "x": -27.2,
+       "z": -101.4,
+       "r": 5
+      },
+      {
+       "x": -0.0,
+       "z": -105.0,
+       "r": 5
+      },
+      {
+       "x": 27.2,
+       "z": -101.4,
+       "r": 5
+      },
+      {
+       "x": 52.5,
+       "z": -90.9,
+       "r": 5
+      },
+      {
+       "x": 74.2,
+       "z": -74.2,
+       "r": 5
+      },
+      {
+       "x": 90.9,
+       "z": -52.5,
+       "r": 5
+      },
+      {
+       "x": 101.4,
+       "z": -27.2,
+       "r": 5
+      },
+      {
+       "x": 155.0,
+       "z": 0.0,
+       "r": 5
+      },
+      {
+       "x": 152.6,
+       "z": 26.9,
+       "r": 5
+      },
+      {
+       "x": 145.7,
+       "z": 53.0,
+       "r": 5
+      },
+      {
+       "x": 134.2,
+       "z": 77.5,
+       "r": 5
+      },
+      {
+       "x": 118.7,
+       "z": 99.6,
+       "r": 5
+      },
+      {
+       "x": 99.6,
+       "z": 118.7,
+       "r": 5
+      },
+      {
+       "x": 77.5,
+       "z": 134.2,
+       "r": 5
+      },
+      {
+       "x": 53.0,
+       "z": 145.7,
+       "r": 5
+      },
+      {
+       "x": 26.9,
+       "z": 152.6,
+       "r": 5
+      },
+      {
+       "x": 0.0,
+       "z": 155.0,
+       "r": 5
+      },
+      {
+       "x": -26.9,
+       "z": 152.6,
+       "r": 5
+      },
+      {
+       "x": -53.0,
+       "z": 145.7,
+       "r": 5
+      },
+      {
+       "x": -77.5,
+       "z": 134.2,
+       "r": 5
+      },
+      {
+       "x": -99.6,
+       "z": 118.7,
+       "r": 5
+      },
+      {
+       "x": -118.7,
+       "z": 99.6,
+       "r": 5
+      },
+      {
+       "x": -134.2,
+       "z": 77.5,
+       "r": 5
+      },
+      {
+       "x": -145.7,
+       "z": 53.0,
+       "r": 5
+      },
+      {
+       "x": -152.6,
+       "z": 26.9,
+       "r": 5
+      },
+      {
+       "x": -155.0,
+       "z": 0.0,
+       "r": 5
+      },
+      {
+       "x": -152.6,
+       "z": -26.9,
+       "r": 5
+      },
+      {
+       "x": -145.7,
+       "z": -53.0,
+       "r": 5
+      },
+      {
+       "x": -134.2,
+       "z": -77.5,
+       "r": 5
+      },
+      {
+       "x": -118.7,
+       "z": -99.6,
+       "r": 5
+      },
+      {
+       "x": -99.6,
+       "z": -118.7,
+       "r": 5
+      },
+      {
+       "x": -77.5,
+       "z": -134.2,
+       "r": 5
+      },
+      {
+       "x": -53.0,
+       "z": -145.7,
+       "r": 5
+      },
+      {
+       "x": -26.9,
+       "z": -152.6,
+       "r": 5
+      },
+      {
+       "x": -0.0,
+       "z": -155.0,
+       "r": 5
+      },
+      {
+       "x": 26.9,
+       "z": -152.6,
+       "r": 5
+      },
+      {
+       "x": 53.0,
+       "z": -145.7,
+       "r": 5
+      },
+      {
+       "x": 77.5,
+       "z": -134.2,
+       "r": 5
+      },
+      {
+       "x": 99.6,
+       "z": -118.7,
+       "r": 5
+      },
+      {
+       "x": 118.7,
+       "z": -99.6,
+       "r": 5
+      },
+      {
+       "x": 134.2,
+       "z": -77.5,
+       "r": 5
+      },
+      {
+       "x": 145.7,
+       "z": -53.0,
+       "r": 5
+      },
+      {
+       "x": 152.6,
+       "z": -26.9,
+       "r": 5
+      },
+      {
+       "x": 200.0,
+       "z": 0.0,
+       "r": 5
+      },
+      {
+       "x": 198.0,
+       "z": 28.5,
+       "r": 5
+      },
+      {
+       "x": 191.9,
+       "z": 56.3,
+       "r": 5
+      },
+      {
+       "x": 181.9,
+       "z": 83.1,
+       "r": 5
+      },
+      {
+       "x": 168.3,
+       "z": 108.1,
+       "r": 5
+      },
+      {
+       "x": 151.1,
+       "z": 131.0,
+       "r": 5
+      },
+      {
+       "x": 131.0,
+       "z": 151.1,
+       "r": 5
+      },
+      {
+       "x": 108.1,
+       "z": 168.3,
+       "r": 5
+      },
+      {
+       "x": 83.1,
+       "z": 181.9,
+       "r": 5
+      },
+      {
+       "x": 56.3,
+       "z": 191.9,
+       "r": 5
+      },
+      {
+       "x": 28.5,
+       "z": 198.0,
+       "r": 5
+      },
+      {
+       "x": 0.0,
+       "z": 200.0,
+       "r": 5
+      },
+      {
+       "x": -28.5,
+       "z": 198.0,
+       "r": 5
+      },
+      {
+       "x": -56.3,
+       "z": 191.9,
+       "r": 5
+      },
+      {
+       "x": -83.1,
+       "z": 181.9,
+       "r": 5
+      },
+      {
+       "x": -108.1,
+       "z": 168.3,
+       "r": 5
+      },
+      {
+       "x": -131.0,
+       "z": 151.1,
+       "r": 5
+      },
+      {
+       "x": -151.1,
+       "z": 131.0,
+       "r": 5
+      },
+      {
+       "x": -168.3,
+       "z": 108.1,
+       "r": 5
+      },
+      {
+       "x": -181.9,
+       "z": 83.1,
+       "r": 5
+      },
+      {
+       "x": -191.9,
+       "z": 56.3,
+       "r": 5
+      },
+      {
+       "x": -198.0,
+       "z": 28.5,
+       "r": 5
+      },
+      {
+       "x": -200.0,
+       "z": 0.0,
+       "r": 5
+      },
+      {
+       "x": -198.0,
+       "z": -28.5,
+       "r": 5
+      },
+      {
+       "x": -191.9,
+       "z": -56.3,
+       "r": 5
+      },
+      {
+       "x": -181.9,
+       "z": -83.1,
+       "r": 5
+      },
+      {
+       "x": -168.3,
+       "z": -108.1,
+       "r": 5
+      },
+      {
+       "x": -151.1,
+       "z": -131.0,
+       "r": 5
+      },
+      {
+       "x": -131.0,
+       "z": -151.1,
+       "r": 5
+      },
+      {
+       "x": -108.1,
+       "z": -168.3,
+       "r": 5
+      },
+      {
+       "x": -83.1,
+       "z": -181.9,
+       "r": 5
+      },
+      {
+       "x": -56.3,
+       "z": -191.9,
+       "r": 5
+      },
+      {
+       "x": -28.5,
+       "z": -198.0,
+       "r": 5
+      },
+      {
+       "x": -0.0,
+       "z": -200.0,
+       "r": 5
+      },
+      {
+       "x": 28.5,
+       "z": -198.0,
+       "r": 5
+      },
+      {
+       "x": 56.3,
+       "z": -191.9,
+       "r": 5
+      },
+      {
+       "x": 83.1,
+       "z": -181.9,
+       "r": 5
+      },
+      {
+       "x": 108.1,
+       "z": -168.3,
+       "r": 5
+      },
+      {
+       "x": 131.0,
+       "z": -151.1,
+       "r": 5
+      },
+      {
+       "x": 151.1,
+       "z": -131.0,
+       "r": 5
+      },
+      {
+       "x": 168.3,
+       "z": -108.1,
+       "r": 5
+      },
+      {
+       "x": 181.9,
+       "z": -83.1,
+       "r": 5
+      },
+      {
+       "x": 191.9,
+       "z": -56.3,
+       "r": 5
+      },
+      {
+       "x": 198.0,
+       "z": -28.5,
+       "r": 5
+      },
+      {
+       "x": 0,
+       "z": 0,
+       "r": 12
+      }
+     ]
+    },
+    {
+     "type": "torus",
+     "R": 226,
+     "r": 6,
+     "axis": "y",
+     "pos": [
+      0,
+      -15,
+      0
+     ],
+     "material": "darksteel"
+    }
+   ]
+  },
+  {
+   "id": "chamber",
+   "name": "Combustion chamber and throat",
+   "stage": 4,
+   "explode": [
+    0,
+    -60,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "lathe",
+     "profile": [
+      [
+       230,
+       1350
+      ],
+      [
+       230,
+       1300
+      ],
+      [
+       230,
+       1250
+      ],
+      [
+       230,
+       1200
+      ],
+      [
+       230,
+       1150
+      ],
+      [
+       230,
+       1130
+      ],
+      [
+       224.6,
+       1100
+      ],
+      [
+       202.5,
+       1060
+      ],
+      [
+       169.4,
+       1020
+      ],
+      [
+       135.1,
+       980
+      ],
+      [
+       109.5,
+       940
+      ],
+      [
+       100.0,
+       900
+      ]
+     ],
+     "axis": "y",
+     "material": "copper"
+    },
+    {
+     "type": "tube",
+     "r": 5.5,
+     "path": [
+      [
+       236,
+       1340,
+       0
+      ],
+      [
+       236,
+       1250,
+       0
+      ],
+      [
+       236,
+       1180,
+       0
+      ],
+      [
+       236,
+       1130,
+       0
+      ],
+      [
+       226.5,
+       1090,
+       0
+      ],
+      [
+       192.8,
+       1040,
+       0
+      ],
+      [
+       149.2,
+       990,
+       0
+      ],
+      [
+       115.5,
+       940,
+       0
+      ],
+      [
+       106.2,
+       905,
+       0
+      ]
+     ],
+     "radial": 60,
+     "material": "steel"
+    },
+    {
+     "type": "torus",
+     "R": 240,
+     "r": 12,
+     "axis": "y",
+     "pos": [
+      0,
+      1350,
+      0
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "torus",
+     "R": 238,
+     "r": 8,
+     "axis": "y",
+     "pos": [
+      0,
+      1240,
+      0
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "torus",
+     "R": 123,
+     "r": 9,
+     "axis": "y",
+     "pos": [
+      0,
+      1000,
+      0
+     ],
+     "material": "darksteel"
+    }
+   ]
+  },
+  {
+   "id": "nozzle",
+   "name": "Bell nozzle",
+   "stage": 5,
+   "explode": [
+    0,
+    -450,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "lathe",
+     "profile": [
+      [
+       100.0,
+       900
+      ],
+      [
+       145.2,
+       895
+      ],
+      [
+       171.7,
+       885
+      ],
+      [
+       195.9,
+       870
+      ],
+      [
+       218.8,
+       850
+      ],
+      [
+       244.7,
+       820
+      ],
+      [
+       271.6,
+       780
+      ],
+      [
+       298.6,
+       730
+      ],
+      [
+       325.5,
+       670
+      ],
+      [
+       352.2,
+       600
+      ],
+      [
+       378.5,
+       520
+      ],
+      [
+       401.7,
+       440
+      ],
+      [
+       425.3,
+       350
+      ],
+      [
+       446.6,
+       260
+      ],
+      [
+       466.3,
+       170
+      ],
+      [
+       482.7,
+       90
+      ],
+      [
+       496.2,
+       20
+      ]
+     ],
+     "axis": "y",
+     "material": "copper"
+    },
+    {
+     "type": "tube",
+     "r": 5.5,
+     "path": [
+      [
+       151.2,
+       895,
+       0
+      ],
+      [
+       214.2,
+       860,
+       0
+      ],
+      [
+       258.1,
+       810,
+       0
+      ],
+      [
+       299.6,
+       740,
+       0
+      ],
+      [
+       339.6,
+       650,
+       0
+      ],
+      [
+       375.0,
+       550,
+       0
+      ],
+      [
+       407.7,
+       440,
+       0
+      ],
+      [
+       436.2,
+       330,
+       0
+      ],
+      [
+       461.6,
+       220,
+       0
+      ],
+      [
+       482.7,
+       120,
+       0
+      ],
+      [
+       500.3,
+       30,
+       0
+      ]
+     ],
+     "radial": 60,
+     "material": "steel"
+    },
+    {
+     "type": "torus",
+     "R": 112,
+     "r": 14,
+     "axis": "y",
+     "pos": [
+      0,
+      900,
+      0
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "torus",
+     "R": 514.0,
+     "r": 14,
+     "axis": "y",
+     "pos": [
+      0,
+      8,
+      0
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "torus",
+     "R": 316.5,
+     "r": 7,
+     "axis": "y",
+     "pos": [
+      0,
+      720,
+      0
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "torus",
+     "R": 391.5,
+     "r": 7,
+     "axis": "y",
+     "pos": [
+      0,
+      520,
+      0
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "torus",
+     "R": 440.7,
+     "r": 7,
+     "axis": "y",
+     "pos": [
+      0,
+      340,
+      0
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "torus",
+     "R": 479.3,
+     "r": 7,
+     "axis": "y",
+     "pos": [
+      0,
+      170,
+      0
+     ],
+     "material": "darksteel"
+    }
+   ]
+  },
+  {
+   "id": "fuelpump",
+   "name": "Fuel pump",
+   "stage": 1,
+   "explode": [
+    0,
+    260,
+    0
+   ],
+   "pos": [
+    400,
+    0,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "lathe",
+     "profile": [
+      [
+       18,
+       985
+      ],
+      [
+       115,
+       985
+      ],
+      [
+       128,
+       1015
+      ],
+      [
+       128,
+       1055
+      ],
+      [
+       112,
+       1085
+      ],
+      [
+       58,
+       1100
+      ],
+      [
+       55,
+       1100
+      ]
+     ],
+     "axis": "y",
+     "material": "aluminium"
+    },
+    {
+     "type": "cyl",
+     "r": 55,
+     "h": 140,
+     "axis": "y",
+     "pos": [
+      0,
+      1170,
+      0
+     ],
+     "open": true,
+     "material": "aluminium"
+    },
+    {
+     "type": "torus",
+     "R": 57,
+     "r": 8,
+     "axis": "y",
+     "pos": [
+      0,
+      1240,
+      0
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 5,
+     "h": 14,
+     "axis": "y",
+     "pos": [
+      57,
+      1243,
+      0
+     ],
+     "radial": 10,
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 34,
+     "h": 80,
+     "axis": "x",
+     "pos": [
+      150,
+      1040,
+      0
+     ],
+     "material": "aluminium"
+    },
+    {
+     "type": "torus",
+     "R": 42,
+     "r": 6,
+     "axis": "x",
+     "pos": [
+      190,
+      1040,
+      0
+     ],
+     "material": "steel"
+    }
+   ]
+  },
+  {
+   "id": "oxpump",
+   "name": "Oxidiser pump",
+   "stage": 1,
+   "explode": [
+    0,
+    260,
+    0
+   ],
+   "pos": [
+    -400,
+    0,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "lathe",
+     "profile": [
+      [
+       18,
+       985
+      ],
+      [
+       115,
+       985
+      ],
+      [
+       128,
+       1015
+      ],
+      [
+       128,
+       1055
+      ],
+      [
+       112,
+       1085
+      ],
+      [
+       58,
+       1100
+      ],
+      [
+       55,
+       1100
+      ]
+     ],
+     "axis": "y",
+     "material": "aluminium"
+    },
+    {
+     "type": "cyl",
+     "r": 55,
+     "h": 140,
+     "axis": "y",
+     "pos": [
+      0,
+      1170,
+      0
+     ],
+     "open": true,
+     "material": "aluminium"
+    },
+    {
+     "type": "torus",
+     "R": 57,
+     "r": 8,
+     "axis": "y",
+     "pos": [
+      0,
+      1240,
+      0
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 5,
+     "h": 14,
+     "axis": "y",
+     "pos": [
+      57,
+      1243,
+      0
+     ],
+     "radial": 10,
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 34,
+     "h": 80,
+     "axis": "x",
+     "pos": [
+      -150,
+      1040,
+      0
+     ],
+     "material": "aluminium"
+    },
+    {
+     "type": "torus",
+     "R": 42,
+     "r": 6,
+     "axis": "x",
+     "pos": [
+      -190,
+      1040,
+      0
+     ],
+     "material": "steel"
+    }
+   ]
+  },
+  {
+   "id": "rotor",
+   "name": "Turbine wheels and pump shafts",
+   "stage": 2,
+   "explode": [
+    0,
+    60,
+    0
+   ],
+   "spin": 60,
+   "spinAxis": "y",
+   "at": [
+    [
+     400,
+     0,
+     0
+    ],
+    [
+     -400,
+     0,
+     0
+    ]
+   ],
+   "shapes": [
+    {
+     "type": "cyl",
+     "r": 16,
+     "h": 330,
+     "axis": "y",
+     "pos": [
+      0,
+      1035,
+      0
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 40,
+     "h": 20,
+     "axis": "y",
+     "pos": [
+      0,
+      930,
+      0
+     ],
+     "material": "titanium"
+    },
+    {
+     "type": "box",
+     "size": [
+      30,
+      34,
+      2.5
+     ],
+     "pos": [
+      55,
+      930,
+      0
+     ],
+     "rot": [
+      0,
+      0,
+      0
+     ],
+     "radial": 28,
+     "material": "titanium"
+    },
+    {
+     "type": "cyl",
+     "r": 50,
+     "h": 8,
+     "axis": "y",
+     "pos": [
+      0,
+      1030,
+      0
+     ],
+     "material": "steel"
+    }
+   ]
+  },
+  {
+   "id": "turbine",
+   "name": "Turbine housings",
+   "stage": 1,
+   "explode": [
+    0,
+    -200,
+    0
+   ],
+   "at": [
+    [
+     400,
+     0,
+     0
+    ],
+    [
+     -400,
+     0,
+     0
+    ]
+   ],
+   "shapes": [
+    {
+     "type": "torus",
+     "R": 95,
+     "r": 26,
+     "axis": "y",
+     "pos": [
+      0,
+      930,
+      0
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "cyl",
+     "r": 24,
+     "h": 14,
+     "axis": "y",
+     "pos": [
+      95,
+      960,
+      0
+     ],
+     "material": "steel"
+    }
+   ]
+  },
+  {
+   "id": "gg",
+   "name": "Gas generator",
+   "stage": 1,
+   "explode": [
+    0,
+    0,
+    -300
+   ],
+   "pos": [
+    0,
+    0,
+    -370
+   ],
+   "shapes": [
+    {
+     "type": "lathe",
+     "profile": [
+      [
+       0,
+       1040
+      ],
+      [
+       26,
+       1040
+      ],
+      [
+       34,
+       1062
+      ],
+      [
+       50,
+       1085
+      ],
+      [
+       50,
+       1180
+      ],
+      [
+       40,
+       1205
+      ],
+      [
+       0,
+       1218
+      ]
+     ],
+     "axis": "y",
+     "material": "titanium"
+    },
+    {
+     "type": "torus",
+     "R": 52,
+     "r": 7,
+     "axis": "y",
+     "pos": [
+      0,
+      1090,
+      0
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "torus",
+     "R": 52,
+     "r": 7,
+     "axis": "y",
+     "pos": [
+      0,
+      1175,
+      0
+     ],
+     "material": "darksteel"
+    }
+   ]
+  },
+  {
+   "id": "ducts",
+   "name": "Hot gas and exhaust ducts",
+   "stage": 0,
+   "explode": [
+    0,
+    -340,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "tube",
+     "r": 13,
+     "material": "darksteel",
+     "path": [
+      [
+       0,
+       1048,
+       -370
+      ],
+      [
+       0,
+       970,
+       -365
+      ],
+      [
+       120,
+       945,
+       -300
+      ],
+      [
+       290,
+       935,
+       -190
+      ],
+      [
+       400,
+       930,
+       -95
+      ]
+     ]
+    },
+    {
+     "type": "tube",
+     "r": 11,
+     "material": "darksteel",
+     "path": [
+      [
+       495,
+       930,
+       0
+      ],
+      [
+       530,
+       830,
+       0
+      ],
+      [
+       510,
+       700,
+       0
+      ],
+      [
+       440,
+       650,
+       0
+      ],
+      [
+       357,
+       638,
+       0
+      ]
+     ]
+    },
+    {
+     "type": "tube",
+     "r": 13,
+     "material": "darksteel",
+     "path": [
+      [
+       0,
+       1048,
+       -370
+      ],
+      [
+       0,
+       970,
+       -365
+      ],
+      [
+       -120,
+       945,
+       -300
+      ],
+      [
+       -290,
+       935,
+       -190
+      ],
+      [
+       -400,
+       930,
+       -95
+      ]
+     ]
+    },
+    {
+     "type": "tube",
+     "r": 11,
+     "material": "darksteel",
+     "path": [
+      [
+       -495,
+       930,
+       0
+      ],
+      [
+       -530,
+       830,
+       0
+      ],
+      [
+       -510,
+       700,
+       0
+      ],
+      [
+       -440,
+       650,
+       0
+      ],
+      [
+       -357,
+       638,
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fuelline",
+   "name": "Fuel line",
+   "stage": 0,
+   "explode": [
+    400,
+    0,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "tube",
+     "r": 16,
+     "path": [
+      [
+       590,
+       1040,
+       0
+      ],
+      [
+       640,
+       1090,
+       0
+      ],
+      [
+       650,
+       1250,
+       0
+      ],
+      [
+       580,
+       1390,
+       0
+      ],
+      [
+       430,
+       1450,
+       0
+      ],
+      [
+       300,
+       1466,
+       0
+      ],
+      [
+       228,
+       1442,
+       0
+      ]
+     ],
+     "material": "brass"
+    },
+    {
+     "type": "tube",
+     "r": 9.92,
+     "path": [
+      [
+       640,
+       1090,
+       0
+      ],
+      [
+       560,
+       1100,
+       -120
+      ],
+      [
+       300,
+       1115,
+       -290
+      ],
+      [
+       120,
+       1125,
+       -340
+      ],
+      [
+       48,
+       1125,
+       -345
+      ]
+     ],
+     "material": "brass"
+    }
+   ]
+  },
+  {
+   "id": "oxline",
+   "name": "Oxidiser line",
+   "stage": 0,
+   "explode": [
+    -400,
+    0,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "tube",
+     "r": 22,
+     "path": [
+      [
+       -590,
+       1040,
+       0
+      ],
+      [
+       -640,
+       1090,
+       0
+      ],
+      [
+       -650,
+       1250,
+       0
+      ],
+      [
+       -580,
+       1390,
+       0
+      ],
+      [
+       -430,
+       1450,
+       0
+      ],
+      [
+       -300,
+       1466,
+       0
+      ],
+      [
+       -228,
+       1442,
+       0
+      ]
+     ],
+     "material": "aluminium"
+    },
+    {
+     "type": "tube",
+     "r": 13.64,
+     "path": [
+      [
+       -640,
+       1090,
+       0
+      ],
+      [
+       -560,
+       1100,
+       -120
+      ],
+      [
+       -300,
+       1115,
+       -290
+      ],
+      [
+       -120,
+       1125,
+       -340
+      ],
+      [
+       -48,
+       1125,
+       -345
+      ]
+     ],
+     "material": "aluminium"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "part": "oxline",
+   "say": "Liquid oxygen arrives from its tank at the oxidiser pump, and this insulated line carries the pressurised oxidiser from the pump to the injector head. A smaller branch feeds the gas generator."
+  },
+  {
+   "part": "oxpump",
+   "say": "The oxidiser pump is a centrifugal pump: a spinning impeller flings the liquid outward into the scroll-shaped housing and raises its pressure far above the chamber pressure."
+  },
+  {
+   "part": "fuelpump",
+   "say": "The fuel pump does the same job for the fuel. Both pumps are needed because the chamber pressure is too high for tank pressure alone to push propellant in."
+  },
+  {
+   "part": "fuelline",
+   "say": "The fuel line takes pressurised fuel up to the injector head. A branch of it goes to the gas generator, and in a real engine the main flow usually passes through the nozzle wall first."
+  },
+  {
+   "part": "gg",
+   "say": "The gas generator burns a small share of the propellant, with one of them in large excess, so the gas stays cool enough for the turbine blades. Its only job is to make hot gas that drives the turbines."
+  },
+  {
+   "part": "ducts",
+   "say": "The hot gas ducts carry the generator's output to the two turbines. After the turbines, the exhaust pipes vent it near the nozzle, which wastes a little performance but keeps the design simple."
+  },
+  {
+   "part": "turbine",
+   "say": "Each turbine housing guides the hot gas onto the turbine blades and collects it again on the way out."
+  },
+  {
+   "part": "rotor",
+   "say": "The gas spins the turbine wheel, and a shaft passes that rotation straight up into the pump. This loop is what powers the engine from its own propellant."
+  },
+  {
+   "part": "gimbal",
+   "say": "The gimbal mount joins the engine to the rocket frame on a ball joint. Actuators tilt the whole engine a few degrees to steer the thrust."
+  },
+  {
+   "part": "head",
+   "say": "The injector head is a manifold. It spreads fuel and oxidiser over the whole top of the chamber and holds the injector plate against the chamber flange."
+  },
+  {
+   "part": "plate",
+   "say": "The injector plate has a ring pattern of holes. Each jet sprays and mixes the two propellants so they burn evenly, and a fuel-rich layer at the chamber wall helps protect the metal."
+  },
+  {
+   "part": "chamber",
+   "say": "Propellants burn here at high pressure. The hot gas is squeezed through the narrowest part, the throat, where it reaches the speed of sound."
+  },
+  {
+   "part": "nozzle",
+   "say": "The bell nozzle lets the gas expand and speed up, turning heat into forward thrust. Tubes in the wall carry fuel that absorbs heat, so the metal survives, and the bands stiffen the thin wall."
+  }
+ ]
+}

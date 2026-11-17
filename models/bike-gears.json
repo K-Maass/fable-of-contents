@@ -1,0 +1,2436 @@
+{
+ "title": "Bicycle rear gear system",
+ "size": "about 160 x 160 x 55 mm (derailleur with 5-sprocket cassette, chain run)",
+ "summary": "A generic rear derailleur with a 5-sprocket cassette and a short run of chain, showing how a cable pull moves the chain from one sprocket to the next.",
+ "note": "A generic, simplified model written by an AI: layout and part names were checked against two web pages (Wikipedia, Park Tool), but sizes, tooth counts and details are not from any real product.",
+ "sources": [
+  {
+   "title": "Derailleur gears (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Derailleur_gears"
+  },
+  {
+   "title": "How A Rear Derailleur Works (Park Tool)",
+   "url": "https://www.parktool.com/en-us/blog/repair-help/how-a-rear-derailleur-works"
+  }
+ ],
+ "parts": [
+  {
+   "id": "cog30",
+   "name": "30-tooth sprocket",
+   "stage": 6,
+   "pos": [
+    14,
+    0,
+    0
+   ],
+   "explode": [
+    26,
+    0,
+    0
+   ],
+   "spin": 15,
+   "spinAxis": "x",
+   "shapes": [
+    {
+     "type": "plate",
+     "size": [
+      114.3,
+      1.8,
+      114.3
+     ],
+     "round": 57.15,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "holes": [
+      {
+       "x": 0,
+       "z": 0,
+       "r": 16.3
+      },
+      {
+       "x": 38.0,
+       "z": 0.0,
+       "r": 11
+      },
+      {
+       "x": 19.0,
+       "z": 32.91,
+       "r": 11
+      },
+      {
+       "x": -19.0,
+       "z": 32.91,
+       "r": 11
+      },
+      {
+       "x": -38.0,
+       "z": 0.0,
+       "r": 11
+      },
+      {
+       "x": -19.0,
+       "z": -32.91,
+       "r": 11
+      },
+      {
+       "x": 19.0,
+       "z": -32.91,
+       "r": 11
+      }
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "extrude",
+     "outline": [
+      [
+       55.65,
+       -2.5
+      ],
+      [
+       63.35,
+       -0.9
+      ],
+      [
+       63.35,
+       0.9
+      ],
+      [
+       55.65,
+       2.5
+      ]
+     ],
+     "h": 1.8,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "radial": 30,
+     "radialAxis": "x",
+     "material": "darksteel"
+    },
+    {
+     "type": "cyl",
+     "r": 18.2,
+     "h": 4.2,
+     "axis": "x",
+     "pos": [
+      3,
+      0,
+      0
+     ],
+     "material": "darksteel"
+    }
+   ]
+  },
+  {
+   "id": "cog23",
+   "name": "23-tooth sprocket",
+   "stage": 5,
+   "pos": [
+    20,
+    0,
+    0
+   ],
+   "explode": [
+    42,
+    0,
+    0
+   ],
+   "spin": 15,
+   "spinAxis": "x",
+   "shapes": [
+    {
+     "type": "plate",
+     "size": [
+      86.07,
+      1.8,
+      86.07
+     ],
+     "round": 43.03,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "holes": [
+      {
+       "x": 0,
+       "z": 0,
+       "r": 16.3
+      },
+      {
+       "x": 31.0,
+       "z": 0.0,
+       "r": 8.5
+      },
+      {
+       "x": 9.58,
+       "z": 29.48,
+       "r": 8.5
+      },
+      {
+       "x": -25.08,
+       "z": 18.22,
+       "r": 8.5
+      },
+      {
+       "x": -25.08,
+       "z": -18.22,
+       "r": 8.5
+      },
+      {
+       "x": 9.58,
+       "z": -29.48,
+       "r": 8.5
+      }
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "extrude",
+     "outline": [
+      [
+       41.53,
+       -2.5
+      ],
+      [
+       49.23,
+       -0.9
+      ],
+      [
+       49.23,
+       0.9
+      ],
+      [
+       41.53,
+       2.5
+      ]
+     ],
+     "h": 1.8,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "radial": 23,
+     "radialAxis": "x",
+     "material": "darksteel"
+    },
+    {
+     "type": "cyl",
+     "r": 18.2,
+     "h": 4.2,
+     "axis": "x",
+     "pos": [
+      3,
+      0,
+      0
+     ],
+     "material": "darksteel"
+    }
+   ]
+  },
+  {
+   "id": "cog18",
+   "name": "18-tooth sprocket",
+   "stage": 4,
+   "pos": [
+    26,
+    0,
+    0
+   ],
+   "explode": [
+    58,
+    0,
+    0
+   ],
+   "spin": 15,
+   "spinAxis": "x",
+   "shapes": [
+    {
+     "type": "plate",
+     "size": [
+      65.94,
+      1.8,
+      65.94
+     ],
+     "round": 32.97,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "holes": [
+      {
+       "x": 0,
+       "z": 0,
+       "r": 16.3
+      },
+      {
+       "x": 25.0,
+       "z": 0.0,
+       "r": 5
+      },
+      {
+       "x": 7.73,
+       "z": 23.78,
+       "r": 5
+      },
+      {
+       "x": -20.23,
+       "z": 14.69,
+       "r": 5
+      },
+      {
+       "x": -20.23,
+       "z": -14.69,
+       "r": 5
+      },
+      {
+       "x": 7.73,
+       "z": -23.78,
+       "r": 5
+      }
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "extrude",
+     "outline": [
+      [
+       31.47,
+       -2.5
+      ],
+      [
+       39.17,
+       -0.9
+      ],
+      [
+       39.17,
+       0.9
+      ],
+      [
+       31.47,
+       2.5
+      ]
+     ],
+     "h": 1.8,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "radial": 18,
+     "radialAxis": "x",
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 18.2,
+     "h": 4.2,
+     "axis": "x",
+     "pos": [
+      3,
+      0,
+      0
+     ],
+     "material": "darksteel"
+    }
+   ]
+  },
+  {
+   "id": "cog14",
+   "name": "14-tooth sprocket",
+   "stage": 3,
+   "pos": [
+    32,
+    0,
+    0
+   ],
+   "explode": [
+    74,
+    0,
+    0
+   ],
+   "spin": 15,
+   "spinAxis": "x",
+   "shapes": [
+    {
+     "type": "plate",
+     "size": [
+      49.87,
+      1.8,
+      49.87
+     ],
+     "round": 24.94,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "holes": [
+      {
+       "x": 0,
+       "z": 0,
+       "r": 16.3
+      }
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "extrude",
+     "outline": [
+      [
+       23.44,
+       -2.5
+      ],
+      [
+       31.14,
+       -0.9
+      ],
+      [
+       31.14,
+       0.9
+      ],
+      [
+       23.44,
+       2.5
+      ]
+     ],
+     "h": 1.8,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "radial": 14,
+     "radialAxis": "x",
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 18.2,
+     "h": 4.2,
+     "axis": "x",
+     "pos": [
+      3,
+      0,
+      0
+     ],
+     "material": "darksteel"
+    }
+   ]
+  },
+  {
+   "id": "cog11",
+   "name": "11-tooth sprocket",
+   "stage": 2,
+   "pos": [
+    38,
+    0,
+    0
+   ],
+   "explode": [
+    90,
+    0,
+    0
+   ],
+   "spin": 15,
+   "spinAxis": "x",
+   "shapes": [
+    {
+     "type": "plate",
+     "size": [
+      37.88,
+      1.8,
+      37.88
+     ],
+     "round": 18.94,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "holes": [
+      {
+       "x": 0,
+       "z": 0,
+       "r": 16.3
+      }
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "extrude",
+     "outline": [
+      [
+       17.44,
+       -2.5
+      ],
+      [
+       25.14,
+       -0.9
+      ],
+      [
+       25.14,
+       0.9
+      ],
+      [
+       17.44,
+       2.5
+      ]
+     ],
+     "h": 1.8,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "radial": 11,
+     "radialAxis": "x",
+     "material": "steel"
+    }
+   ]
+  },
+  {
+   "id": "lockring",
+   "name": "Lockring",
+   "stage": 1,
+   "pos": [
+    40.9,
+    0,
+    0
+   ],
+   "explode": [
+    111,
+    0,
+    0
+   ],
+   "spin": 15,
+   "spinAxis": "x",
+   "shapes": [
+    {
+     "type": "lathe",
+     "axis": "x",
+     "profile": [
+      [
+       5.6,
+       -2
+      ],
+      [
+       16,
+       -2
+      ],
+      [
+       17.4,
+       -1
+      ],
+      [
+       17.4,
+       1.2
+      ],
+      [
+       16,
+       2
+      ],
+      [
+       5.6,
+       2
+      ],
+      [
+       5.6,
+       -2
+      ]
+     ],
+     "material": "aluminium"
+    },
+    {
+     "type": "box",
+     "size": [
+      4,
+      2,
+      2.6
+     ],
+     "pos": [
+      0,
+      17.2,
+      0
+     ],
+     "radial": 12,
+     "radialAxis": "x",
+     "material": "aluminium"
+    }
+   ]
+  },
+  {
+   "id": "hub",
+   "name": "Hub axle and freehub body",
+   "stage": 8,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "explode": [
+    -20,
+    0,
+    0
+   ],
+   "spin": 15,
+   "spinAxis": "x",
+   "shapes": [
+    {
+     "type": "cyl",
+     "r": 5,
+     "h": 66,
+     "axis": "x",
+     "pos": [
+      25,
+      0,
+      0
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 17,
+     "h": 34,
+     "axis": "x",
+     "pos": [
+      26,
+      0,
+      0
+     ],
+     "material": "darksteel"
+    },
+    {
+     "type": "box",
+     "size": [
+      34,
+      1.8,
+      3
+     ],
+     "pos": [
+      26,
+      17.5,
+      0
+     ],
+     "radial": 8,
+     "radialAxis": "x",
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 26,
+     "h": 4,
+     "axis": "x",
+     "pos": [
+      11,
+      0,
+      0
+     ],
+     "material": "aluminium"
+    },
+    {
+     "type": "cyl",
+     "r": 9,
+     "h": 4,
+     "axis": "x",
+     "pos": [
+      7,
+      0,
+      0
+     ],
+     "material": "aluminium"
+    },
+    {
+     "type": "torus",
+     "R": 17,
+     "r": 0.5,
+     "axis": "x",
+     "pos": [
+      43,
+      0,
+      0
+     ],
+     "material": "steel"
+    }
+   ]
+  },
+  {
+   "id": "hanger",
+   "name": "Derailleur hanger",
+   "stage": 8,
+   "pos": [
+    2.5,
+    0,
+    0
+   ],
+   "explode": [
+    -45,
+    0,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "extrude",
+     "outline": [
+      [
+       -35.0,
+       82.0
+      ],
+      [
+       -34.46,
+       78.6
+      ],
+      [
+       -14.27,
+       -4.64
+      ],
+      [
+       -12.14,
+       -8.82
+      ],
+      [
+       -8.82,
+       -12.14
+      ],
+      [
+       -4.64,
+       -14.27
+      ],
+      [
+       -0.0,
+       -15.0
+      ],
+      [
+       4.64,
+       -14.27
+      ],
+      [
+       8.82,
+       -12.14
+      ],
+      [
+       12.14,
+       -8.82
+      ],
+      [
+       14.27,
+       -4.64
+      ],
+      [
+       15.0,
+       0.0
+      ],
+      [
+       14.27,
+       4.64
+      ],
+      [
+       -13.54,
+       85.4
+      ],
+      [
+       -15.1,
+       88.47
+      ],
+      [
+       -17.53,
+       90.9
+      ],
+      [
+       -20.6,
+       92.46
+      ],
+      [
+       -24.0,
+       93.0
+      ],
+      [
+       -27.4,
+       92.46
+      ],
+      [
+       -30.47,
+       90.9
+      ],
+      [
+       -32.9,
+       88.47
+      ],
+      [
+       -34.46,
+       85.4
+      ]
+     ],
+     "h": 5,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "material": "aluminium",
+     "holes": [
+      {
+       "x": 0,
+       "z": 0,
+       "r": 6
+      },
+      {
+       "x": -24,
+       "z": 82,
+       "r": 3.4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "body",
+   "name": "Derailleur body (b-knuckle)",
+   "stage": 7,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "explode": [
+    20,
+    0,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "extrude",
+     "outline": [
+      [
+       -12,
+       73
+      ],
+      [
+       -12,
+       93
+      ],
+      [
+       -28,
+       95
+      ],
+      [
+       -38,
+       88
+      ],
+      [
+       -42,
+       78
+      ],
+      [
+       -36,
+       70
+      ]
+     ],
+     "h": 12,
+     "pos": [
+      11,
+      0,
+      0
+     ],
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "material": "anodised",
+     "color": "#3d4a5a"
+    },
+    {
+     "type": "cyl",
+     "r": 6.5,
+     "h": 3,
+     "axis": "x",
+     "pos": [
+      18.5,
+      -24,
+      82
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 3.2,
+     "h": 18,
+     "axis": "x",
+     "pos": [
+      9.5,
+      -24,
+      82
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 2.5,
+     "h": 9,
+     "axis": "y",
+     "pos": [
+      8,
+      -12,
+      78
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 2.5,
+     "h": 9,
+     "axis": "y",
+     "pos": [
+      14.5,
+      -12,
+      78
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 3.6,
+     "h": 3,
+     "axis": "y",
+     "pos": [
+      16,
+      -40,
+      88
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 2,
+     "h": 4,
+     "axis": "y",
+     "pos": [
+      16,
+      -37.5,
+      88
+     ],
+     "material": "steel"
+    }
+   ]
+  },
+  {
+   "id": "links",
+   "name": "Parallelogram links",
+   "stage": 6,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "explode": [
+    38,
+    0,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "tube",
+     "r": 3.2,
+     "path": [
+      [
+       11,
+       -18,
+       78
+      ],
+      [
+       14.25,
+       -41,
+       56
+      ],
+      [
+       17.5,
+       -64,
+       34
+      ]
+     ],
+     "material": "aluminium"
+    },
+    {
+     "type": "tube",
+     "r": 3.2,
+     "path": [
+      [
+       11,
+       -34,
+       78
+      ],
+      [
+       14.25,
+       -59,
+       56
+      ],
+      [
+       17.5,
+       -84,
+       34
+      ]
+     ],
+     "material": "aluminium"
+    },
+    {
+     "type": "sphere",
+     "r": 4.3,
+     "pos": [
+      11,
+      -18,
+      78
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "sphere",
+     "r": 4.3,
+     "pos": [
+      11,
+      -34,
+      78
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "sphere",
+     "r": 4.3,
+     "pos": [
+      17.5,
+      -64,
+      34
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "sphere",
+     "r": 4.3,
+     "pos": [
+      17.5,
+      -84,
+      34
+     ],
+     "material": "steel"
+    }
+   ]
+  },
+  {
+   "id": "pknuckle",
+   "name": "Cage pivot (p-knuckle)",
+   "stage": 5,
+   "pos": [
+    17.5,
+    -76,
+    24
+   ],
+   "explode": [
+    52,
+    0,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "lathe",
+     "axis": "x",
+     "profile": [
+      [
+       7.8,
+       -3.5
+      ],
+      [
+       10,
+       -3.5
+      ],
+      [
+       10,
+       3.5
+      ],
+      [
+       7.8,
+       3.5
+      ],
+      [
+       7.8,
+       -3.5
+      ]
+     ],
+     "material": "anodised",
+     "color": "#3d4a5a"
+    },
+    {
+     "type": "cyl",
+     "r": 10,
+     "h": 1.5,
+     "axis": "x",
+     "pos": [
+      -2.75,
+      0,
+      0
+     ],
+     "material": "anodised",
+     "color": "#3d4a5a"
+    },
+    {
+     "type": "box",
+     "size": [
+      6,
+      26,
+      16
+     ],
+     "pos": [
+      0,
+      1,
+      7
+     ],
+     "material": "anodised",
+     "color": "#3d4a5a"
+    }
+   ]
+  },
+  {
+   "id": "spring",
+   "name": "Cage return spring",
+   "stage": 4,
+   "pos": [
+    17.5,
+    -76,
+    24
+   ],
+   "explode": [
+    72,
+    0,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "tube",
+     "r": 0.8,
+     "path": [
+      [
+       -1.7,
+       6.2,
+       0.0
+      ],
+      [
+       -1.62,
+       5.02,
+       3.64
+      ],
+      [
+       -1.53,
+       1.92,
+       5.9
+      ],
+      [
+       -1.45,
+       -1.92,
+       5.9
+      ],
+      [
+       -1.36,
+       -5.02,
+       3.64
+      ],
+      [
+       -1.28,
+       -6.2,
+       0.0
+      ],
+      [
+       -1.2,
+       -5.02,
+       -3.64
+      ],
+      [
+       -1.11,
+       -1.92,
+       -5.9
+      ],
+      [
+       -1.03,
+       1.92,
+       -5.9
+      ],
+      [
+       -0.94,
+       5.02,
+       -3.64
+      ],
+      [
+       -0.86,
+       6.2,
+       -0.0
+      ],
+      [
+       -0.78,
+       5.02,
+       3.64
+      ],
+      [
+       -0.69,
+       1.92,
+       5.9
+      ],
+      [
+       -0.61,
+       -1.92,
+       5.9
+      ],
+      [
+       -0.52,
+       -5.02,
+       3.64
+      ],
+      [
+       -0.44,
+       -6.2,
+       0.0
+      ],
+      [
+       -0.36,
+       -5.02,
+       -3.64
+      ],
+      [
+       -0.27,
+       -1.92,
+       -5.9
+      ],
+      [
+       -0.19,
+       1.92,
+       -5.9
+      ],
+      [
+       -0.1,
+       5.02,
+       -3.64
+      ],
+      [
+       -0.02,
+       6.2,
+       -0.0
+      ],
+      [
+       0.06,
+       5.02,
+       3.64
+      ],
+      [
+       0.15,
+       1.92,
+       5.9
+      ],
+      [
+       0.23,
+       -1.92,
+       5.9
+      ],
+      [
+       0.32,
+       -5.02,
+       3.64
+      ],
+      [
+       0.4,
+       -6.2,
+       0.0
+      ],
+      [
+       0.48,
+       -5.02,
+       -3.64
+      ],
+      [
+       0.57,
+       -1.92,
+       -5.9
+      ],
+      [
+       0.65,
+       1.92,
+       -5.9
+      ],
+      [
+       0.74,
+       5.02,
+       -3.64
+      ],
+      [
+       0.82,
+       6.2,
+       -0.0
+      ],
+      [
+       0.9,
+       5.02,
+       3.64
+      ],
+      [
+       0.99,
+       1.92,
+       5.9
+      ],
+      [
+       1.07,
+       -1.92,
+       5.9
+      ],
+      [
+       1.16,
+       -5.02,
+       3.64
+      ],
+      [
+       1.24,
+       -6.2,
+       0.0
+      ],
+      [
+       1.32,
+       -5.02,
+       -3.64
+      ],
+      [
+       1.41,
+       -1.92,
+       -5.9
+      ],
+      [
+       1.49,
+       1.92,
+       -5.9
+      ],
+      [
+       1.58,
+       5.02,
+       -3.64
+      ],
+      [
+       1.66,
+       6.2,
+       -0.0
+      ],
+      [
+       1.74,
+       5.02,
+       3.64
+      ],
+      [
+       1.83,
+       1.92,
+       5.9
+      ],
+      [
+       1.91,
+       -1.92,
+       5.9
+      ],
+      [
+       2.0,
+       -5.02,
+       3.64
+      ],
+      [
+       2.08,
+       -6.2,
+       0.0
+      ],
+      [
+       2.16,
+       -5.02,
+       -3.64
+      ],
+      [
+       2.25,
+       -1.92,
+       -5.9
+      ],
+      [
+       2.33,
+       1.92,
+       -5.9
+      ],
+      [
+       2.42,
+       5.02,
+       -3.64
+      ],
+      [
+       2.5,
+       6.2,
+       -0.0
+      ]
+     ],
+     "material": "steel"
+    }
+   ]
+  },
+  {
+   "id": "cage_in",
+   "name": "Cage inner plate",
+   "stage": 3,
+   "pos": [
+    22,
+    0,
+    0
+   ],
+   "explode": [
+    90,
+    0,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "extrude",
+     "outline": [
+      [
+       -142.0,
+       56.0
+      ],
+      [
+       -141.51,
+       52.91
+      ],
+      [
+       -140.09,
+       50.12
+      ],
+      [
+       -137.88,
+       47.91
+      ],
+      [
+       -82.47,
+       15.1
+      ],
+      [
+       -79.4,
+       13.54
+      ],
+      [
+       -76.0,
+       13.0
+      ],
+      [
+       -72.6,
+       13.54
+      ],
+      [
+       -69.53,
+       15.1
+      ],
+      [
+       -67.1,
+       17.53
+      ],
+      [
+       -65.54,
+       20.6
+      ],
+      [
+       -65.0,
+       24.0
+      ],
+      [
+       -65.54,
+       27.4
+      ],
+      [
+       -67.1,
+       30.47
+      ],
+      [
+       -69.53,
+       32.9
+      ],
+      [
+       -126.12,
+       64.09
+      ],
+      [
+       -128.91,
+       65.51
+      ],
+      [
+       -132.0,
+       66.0
+      ],
+      [
+       -135.09,
+       65.51
+      ],
+      [
+       -137.88,
+       64.09
+      ],
+      [
+       -140.09,
+       61.88
+      ],
+      [
+       -141.51,
+       59.09
+      ]
+     ],
+     "h": 2,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "material": "darksteel",
+     "holes": [
+      {
+       "x": -132,
+       "z": 56,
+       "r": 2.2
+      }
+     ]
+    },
+    {
+     "type": "cyl",
+     "r": 3,
+     "h": 15,
+     "axis": "x",
+     "pos": [
+      1.5,
+      -76,
+      24
+     ],
+     "material": "steel"
+    }
+   ]
+  },
+  {
+   "id": "cage_out",
+   "name": "Cage outer plate",
+   "stage": 1,
+   "pos": [
+    30,
+    0,
+    0
+   ],
+   "explode": [
+    120,
+    0,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "extrude",
+     "outline": [
+      [
+       -142.0,
+       56.0
+      ],
+      [
+       -141.51,
+       52.91
+      ],
+      [
+       -140.09,
+       50.12
+      ],
+      [
+       -137.88,
+       47.91
+      ],
+      [
+       -82.47,
+       15.1
+      ],
+      [
+       -79.4,
+       13.54
+      ],
+      [
+       -76.0,
+       13.0
+      ],
+      [
+       -72.6,
+       13.54
+      ],
+      [
+       -69.53,
+       15.1
+      ],
+      [
+       -67.1,
+       17.53
+      ],
+      [
+       -65.54,
+       20.6
+      ],
+      [
+       -65.0,
+       24.0
+      ],
+      [
+       -65.54,
+       27.4
+      ],
+      [
+       -67.1,
+       30.47
+      ],
+      [
+       -69.53,
+       32.9
+      ],
+      [
+       -126.12,
+       64.09
+      ],
+      [
+       -128.91,
+       65.51
+      ],
+      [
+       -132.0,
+       66.0
+      ],
+      [
+       -135.09,
+       65.51
+      ],
+      [
+       -137.88,
+       64.09
+      ],
+      [
+       -140.09,
+       61.88
+      ],
+      [
+       -141.51,
+       59.09
+      ]
+     ],
+     "h": 2,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "material": "darksteel",
+     "holes": [
+      {
+       "x": -76,
+       "z": 24,
+       "r": 3.1
+      },
+      {
+       "x": -132,
+       "z": 56,
+       "r": 3.1
+      }
+     ]
+    },
+    {
+     "type": "cyl",
+     "r": 4.2,
+     "h": 2,
+     "axis": "x",
+     "pos": [
+      2,
+      -76,
+      24
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 4.2,
+     "h": 2,
+     "axis": "x",
+     "pos": [
+      2,
+      -132,
+      56
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "cyl",
+     "r": 2.7,
+     "h": 10,
+     "axis": "x",
+     "pos": [
+      -3.5,
+      -132,
+      56
+     ],
+     "material": "steel"
+    }
+   ]
+  },
+  {
+   "id": "guide",
+   "name": "Guide pulley",
+   "stage": 2,
+   "pos": [
+    26,
+    -76,
+    24
+   ],
+   "explode": [
+    104,
+    0,
+    0
+   ],
+   "spin": -15,
+   "spinAxis": "x",
+   "shapes": [
+    {
+     "type": "plate",
+     "size": [
+      39,
+      5.6,
+      39
+     ],
+     "round": 19.5,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "material": "plastic",
+     "color": "#26292d",
+     "holes": [
+      {
+       "x": 0,
+       "z": 0,
+       "r": 3.3
+      }
+     ]
+    },
+    {
+     "type": "cyl",
+     "r": 7,
+     "h": 6.4,
+     "axis": "x",
+     "material": "aluminium"
+    },
+    {
+     "type": "extrude",
+     "outline": [
+      [
+       17.44,
+       -2.5
+      ],
+      [
+       25.14,
+       -0.9
+      ],
+      [
+       25.14,
+       0.9
+      ],
+      [
+       17.44,
+       2.5
+      ]
+     ],
+     "h": 5.6,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "radial": 11,
+     "radialAxis": "x",
+     "material": "darksteel"
+    }
+   ]
+  },
+  {
+   "id": "tension",
+   "name": "Tension pulley",
+   "stage": 2,
+   "pos": [
+    26,
+    -132,
+    56
+   ],
+   "explode": [
+    104,
+    0,
+    0
+   ],
+   "spin": 15,
+   "spinAxis": "x",
+   "shapes": [
+    {
+     "type": "plate",
+     "size": [
+      39,
+      5.6,
+      39
+     ],
+     "round": 19.5,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "material": "plastic",
+     "color": "#26292d",
+     "holes": [
+      {
+       "x": 0,
+       "z": 0,
+       "r": 3.3
+      }
+     ]
+    },
+    {
+     "type": "cyl",
+     "r": 7,
+     "h": 6.4,
+     "axis": "x",
+     "material": "aluminium"
+    },
+    {
+     "type": "extrude",
+     "outline": [
+      [
+       17.44,
+       -2.5
+      ],
+      [
+       25.14,
+       -0.9
+      ],
+      [
+       25.14,
+       0.9
+      ],
+      [
+       17.44,
+       2.5
+      ]
+     ],
+     "h": 5.6,
+     "rot": [
+      0,
+      0,
+      90
+     ],
+     "radial": 11,
+     "radialAxis": "x",
+     "material": "darksteel"
+    }
+   ]
+  },
+  {
+   "id": "chain",
+   "name": "Chain",
+   "stage": 0,
+   "pos": [
+    26,
+    0,
+    0
+   ],
+   "explode": [
+    -90,
+    0,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "tube",
+     "r": 2.4,
+     "path": [
+      [
+       0,
+       36.57,
+       -120
+      ],
+      [
+       0,
+       36.57,
+       -60
+      ],
+      [
+       0,
+       36.57,
+       0.0
+      ],
+      [
+       0,
+       35.32,
+       9.49
+      ],
+      [
+       0,
+       31.64,
+       18.33
+      ],
+      [
+       0,
+       25.8,
+       25.92
+      ],
+      [
+       0,
+       18.19,
+       31.72
+      ],
+      [
+       0,
+       9.33,
+       35.36
+      ],
+      [
+       0,
+       -0.16,
+       36.57
+      ],
+      [
+       0,
+       -9.65,
+       35.27
+      ],
+      [
+       0,
+       -18.47,
+       31.56
+      ],
+      [
+       0,
+       -41.54,
+       18.05
+      ],
+      [
+       0,
+       -64.61,
+       4.55
+      ],
+      [
+       0,
+       -70.0,
+       2.27
+      ],
+      [
+       0,
+       -75.8,
+       1.46
+      ],
+      [
+       0,
+       -81.61,
+       2.17
+      ],
+      [
+       0,
+       -87.04,
+       4.35
+      ],
+      [
+       0,
+       -91.73,
+       7.85
+      ],
+      [
+       0,
+       -95.35,
+       12.45
+      ],
+      [
+       0,
+       -97.68,
+       17.82
+      ],
+      [
+       0,
+       -104.0,
+       40.0
+      ],
+      [
+       0,
+       -110.32,
+       62.18
+      ],
+      [
+       0,
+       -112.65,
+       67.55
+      ],
+      [
+       0,
+       -116.27,
+       72.14
+      ],
+      [
+       0,
+       -120.96,
+       75.65
+      ],
+      [
+       0,
+       -126.39,
+       77.83
+      ],
+      [
+       0,
+       -132.2,
+       78.54
+      ],
+      [
+       0,
+       -137.99,
+       77.73
+      ],
+      [
+       0,
+       -143.38,
+       75.45
+      ],
+      [
+       0,
+       -148.01,
+       71.87
+      ],
+      [
+       0,
+       -151.55,
+       67.21
+      ],
+      [
+       0,
+       -153.78,
+       61.8
+      ],
+      [
+       0,
+       -154.54,
+       56.0
+      ],
+      [
+       0,
+       -154.54,
+       16
+      ],
+      [
+       0,
+       -151.54,
+       -95
+      ]
+     ],
+     "material": "steel"
+    },
+    {
+     "type": "box",
+     "size": [
+      1.3,
+      5,
+      11.4
+     ],
+     "pos": [
+      2.7,
+      36.57,
+      -114.4
+     ],
+     "rot": [
+      -0.0,
+      0,
+      0
+     ],
+     "array": {
+      "count": 9,
+      "step": [
+       0,
+       0.0,
+       12.7
+      ]
+     },
+     "material": "steel"
+    },
+    {
+     "type": "box",
+     "size": [
+      1.3,
+      5,
+      11.4
+     ],
+     "pos": [
+      -2.7,
+      36.57,
+      -108.05
+     ],
+     "rot": [
+      -0.0,
+      0,
+      0
+     ],
+     "array": {
+      "count": 8,
+      "step": [
+       0,
+       0.0,
+       12.7
+      ]
+     },
+     "material": "steel"
+    },
+    {
+     "type": "box",
+     "size": [
+      1.3,
+      5,
+      11.4
+     ],
+     "pos": [
+      2.7,
+      -23.31,
+      28.73
+     ],
+     "rot": [
+      120.34,
+      0,
+      0
+     ],
+     "array": {
+      "count": 4,
+      "step": [
+       0,
+       -10.96,
+       -6.42
+      ]
+     },
+     "material": "steel"
+    },
+    {
+     "type": "box",
+     "size": [
+      1.3,
+      5,
+      11.4
+     ],
+     "pos": [
+      -2.7,
+      -28.79,
+      25.52
+     ],
+     "rot": [
+      120.34,
+      0,
+      0
+     ],
+     "array": {
+      "count": 3,
+      "step": [
+       0,
+       -10.96,
+       -6.42
+      ]
+     },
+     "material": "steel"
+    },
+    {
+     "type": "box",
+     "size": [
+      1.3,
+      5,
+      11.4
+     ],
+     "pos": [
+      2.7,
+      -99.21,
+      23.2
+     ],
+     "rot": [
+      15.92,
+      0,
+      0
+     ],
+     "array": {
+      "count": 3,
+      "step": [
+       0,
+       -3.48,
+       12.21
+      ]
+     },
+     "material": "steel"
+    },
+    {
+     "type": "box",
+     "size": [
+      1.3,
+      5,
+      11.4
+     ],
+     "pos": [
+      -2.7,
+      -100.95,
+      29.31
+     ],
+     "rot": [
+      15.92,
+      0,
+      0
+     ],
+     "array": {
+      "count": 2,
+      "step": [
+       0,
+       -3.48,
+       12.21
+      ]
+     },
+     "material": "steel"
+    },
+    {
+     "type": "box",
+     "size": [
+      1.3,
+      5,
+      11.4
+     ],
+     "pos": [
+      2.7,
+      -154.39,
+      10.4
+     ],
+     "rot": [
+      -178.45,
+      0,
+      0
+     ],
+     "array": {
+      "count": 8,
+      "step": [
+       0,
+       0.34,
+       -12.7
+      ]
+     },
+     "material": "steel"
+    },
+    {
+     "type": "box",
+     "size": [
+      1.3,
+      5,
+      11.4
+     ],
+     "pos": [
+      -2.7,
+      -154.22,
+      4.05
+     ],
+     "rot": [
+      -178.45,
+      0,
+      0
+     ],
+     "array": {
+      "count": 7,
+      "step": [
+       0,
+       0.34,
+       -12.7
+      ]
+     },
+     "material": "steel"
+    }
+   ]
+  },
+  {
+   "id": "cable",
+   "name": "Shift cable and housing",
+   "stage": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "explode": [
+    0,
+    0,
+    60
+   ],
+   "shapes": [
+    {
+     "type": "tube",
+     "r": 2.1,
+     "path": [
+      [
+       -16,
+       -12,
+       -130
+      ],
+      [
+       -16,
+       -12,
+       -20
+      ],
+      [
+       -14,
+       -16,
+       50
+      ],
+      [
+       -12,
+       -20,
+       90
+      ],
+      [
+       -6,
+       -24,
+       112
+      ],
+      [
+       4,
+       -26,
+       112
+      ],
+      [
+       11,
+       -26,
+       104
+      ]
+     ],
+     "material": "plastic",
+     "color": "#1d1f22"
+    },
+    {
+     "type": "cyl",
+     "r": 3.4,
+     "h": 6,
+     "axis": "z",
+     "pos": [
+      11,
+      -26,
+      96
+     ],
+     "material": "brass"
+    },
+    {
+     "type": "tube",
+     "r": 0.6,
+     "path": [
+      [
+       11,
+       -26,
+       93
+      ],
+      [
+       12.5,
+       -31,
+       91
+      ],
+      [
+       15,
+       -36,
+       88.5
+      ],
+      [
+       16,
+       -37.5,
+       88
+      ]
+     ],
+     "material": "steel"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "part": "cable",
+   "say": "The shifter pulls the inner wire through its housing. The wire ends at a barrel adjuster on the body and is clamped under the anchor bolt, so every click moves the wire a set distance."
+  },
+  {
+   "part": "hanger",
+   "say": "The hanger is the replaceable tab on the frame that the whole derailleur hangs from. It holds the derailleur body at a fixed spot behind the axle."
+  },
+  {
+   "part": "body",
+   "say": "The body is bolted to the hanger. It carries the adjustment screws and the cable anchor bolt. The H and L limit screws stop the linkage so the chain cannot be pushed off either end of the cassette."
+  },
+  {
+   "part": "links",
+   "say": "Two parallel links form the parallelogram. Pulling the cable swings them sideways, which carries the cage under the cassette from one sprocket to the next."
+  },
+  {
+   "part": "pknuckle",
+   "say": "The p-knuckle joins the links to the cage. It is the pivot the cage turns on and it houses the cage spring."
+  },
+  {
+   "part": "spring",
+   "say": "The spring turns the cage backwards so the chain stays tight. When the cable is released it also moves the links back the other way."
+  },
+  {
+   "part": "cage_in",
+   "say": "The inner plate of the cage holds the two pulleys in line. It turns on the p-knuckle pivot and swings back as the chain moves to a smaller sprocket."
+  },
+  {
+   "part": "cage_out",
+   "say": "The outer plate closes the cage and carries the pulley bolts. Together the two plates keep the pulleys parallel to each other."
+  },
+  {
+   "part": "guide",
+   "say": "The guide pulley sits just under the cassette. Its teeth steer the chain sideways onto the sprocket the cage is lined up with."
+  },
+  {
+   "part": "tension",
+   "say": "The tension pulley is the lower one. The spring pushes it backward so the loose lower part of the chain is pulled tight, and the chain follows an S shape through both pulleys."
+  },
+  {
+   "part": "chain",
+   "say": "The chain is a loop of pinned links. It runs over the top of the sprocket, down to the guide pulley, back through the S bend to the tension pulley, and forward to the front chainring."
+  },
+  {
+   "part": "cog11",
+   "say": "The smallest sprocket gives the highest gear. The chain moves onto it when the cage is swung farthest out."
+  },
+  {
+   "part": "cog14",
+   "say": "Each sprocket has its own tooth count, so each one gives a different ratio between pedalling and wheel speed."
+  },
+  {
+   "part": "cog18",
+   "say": "The chain is shown on this middle sprocket. Its teeth fit between the chain's rollers and drive the wheel."
+  },
+  {
+   "part": "cog23",
+   "say": "Larger sprockets are closer to the frame. The chain only needs to be moved a few millimetres from one sprocket to the next."
+  },
+  {
+   "part": "cog30",
+   "say": "The largest sprocket gives the lowest gear for climbing. It sits closest to the frame, with spacers keeping the sprockets apart."
+  },
+  {
+   "part": "lockring",
+   "say": "The lockring screws into the end of the freehub body and clamps the whole stack of sprockets in place."
+  },
+  {
+   "part": "hub",
+   "say": "The sprockets slide onto the splines of the freehub body. A one-way clutch inside it lets the rider coast while the sprockets stop driving the wheel."
+  }
+ ]
+}
