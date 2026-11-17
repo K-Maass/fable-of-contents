@@ -1,0 +1,9 @@
+[
+ {
+  "id": "graphics-card",
+  "file": "graphics-card.json",
+  "title": "Graphics card",
+  "parts": 13,
+  "summary": "A generic three-fan graphics card: where the heat goes, and what sits under the cooler."
+ }
+]

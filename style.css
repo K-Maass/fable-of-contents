@@ -1,0 +1,73 @@
+/* Layout: a drafting sheet. The drawing fills the top with a title block in its corner;
+   controls read downward: pull apart, explanation, parts. */
+:root {
+  --paper: #e8eef1; --sheet: #f4f7f8; --ink: #1c2a33; --ink-soft: #55656f; --rule: #b9c7cf;
+  --ochre: #d9952a; --ochre-ink: #5a3a06; --sky: #bcd3de; --warn: #a8422f;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #0f1a22; --sheet: #16242e; --ink: #dbe7ee; --ink-soft: #93a7b3; --rule: #334855;
+  --ochre: #e9a93c; --ochre-ink: #2a1a02; --sky: #27404f; --warn: #ec8a75; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #0f1a22; --sheet: #16242e; --ink: #dbe7ee; --ink-soft: #93a7b3; --rule: #334855;
+  --ochre: #e9a93c; --ochre-ink: #2a1a02; --sky: #27404f; --warn: #ec8a75; color-scheme: dark }
+* { box-sizing: border-box }
+html, body { height: 100% }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5 }
+[hidden] { display: none !important }
+.wrap { max-width: 980px; margin: 0 auto; padding-block: 14px 28px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-direction: column; gap: 14px }
+.top { display: flex; align-items: baseline; gap: 12px; border-bottom: 1px solid var(--rule); padding-bottom: 8px }
+.top a { font-family: var(--display); font-weight: 600; font-size: 20px; letter-spacing: .04em; text-transform: uppercase; color: var(--ink); text-decoration: none }
+.top span { font-family: var(--mono); font-size: 11px; color: var(--ink-soft) }
+section { display: flex; flex-direction: column; gap: 14px }
+h1 { font-family: var(--display); font-weight: 600; font-size: 32px; line-height: 1.05; margin: 0; letter-spacing: .01em; text-wrap: balance }
+.sub { color: var(--ink-soft); margin: 2px 0 0; max-width: 62ch }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 14px }
+.card { display: flex; flex-direction: column; gap: 2px; padding: 10px; border: 1px solid var(--rule); border-radius: 4px; background: var(--sheet);
+  color: var(--ink); text-decoration: none; min-width: 0 }
+.card:hover { border-color: var(--ink-soft) }
+.card .pic { aspect-ratio: 4 / 3; border-bottom: 1px solid var(--rule); margin: -10px -10px 8px; overflow: hidden; background: var(--sheet) }
+.card .pic img { width: 100%; height: 100%; object-fit: cover; display: block }
+.card b { font-family: var(--display); font-weight: 600; font-size: 21px; line-height: 1.1 }
+.card span { font-family: var(--mono); font-size: 11px; color: var(--ink-soft) }
+.card p { margin: 4px 0 0; font-size: 13px; color: var(--ink-soft) }
+.stage { position: relative; background: var(--sheet); border: 1px solid var(--rule); border-radius: 4px; overflow: hidden;
+  height: min(62vh, 560px); min-height: 320px; touch-action: none }
+.stage canvas { display: block; width: 100%; height: 100% }
+.block { position: absolute; left: 10px; bottom: 10px; font-family: var(--mono); font-size: 11px; line-height: 1.45; color: var(--ink-soft);
+  border: 1px solid var(--rule); background: var(--sheet); padding: 6px 9px; border-radius: 2px; pointer-events: none }
+.block b { display: block; font-family: var(--display); font-size: 17px; font-weight: 600; color: var(--ink); letter-spacing: .02em }
+.callout { position: absolute; left: 0; top: 0; pointer-events: none; font-family: var(--display); font-weight: 600; font-size: 16px;
+  background: var(--ochre); color: var(--ochre-ink); padding: 1px 8px; border-radius: 2px; white-space: nowrap; transform: translate(-50%, -160%) }
+#exitclean { position: absolute; right: calc(10px + env(safe-area-inset-right, 0px)); bottom: calc(10px + env(safe-area-inset-bottom, 0px)); opacity: .35; font-size: 12px; min-height: 30px; padding: 3px 9px }
+#exitclean:hover, #exitclean:focus-visible { opacity: 1 }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap }
+.lab { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft) }
+input[type=range] { flex: 1 1 200px; min-width: 0; accent-color: var(--ochre); height: 28px }
+.step, .ask { border-top: 1px solid var(--rule); padding-top: 12px; display: flex; flex-direction: column; gap: 8px }
+.step h2 { font-family: var(--display); font-weight: 600; font-size: 22px; margin: 0; line-height: 1.1 }
+.step p { margin: 0; max-width: 62ch; min-height: 3em }
+button, .filebtn { font: 500 14px var(--body); color: var(--ink); background: transparent; border: 1px solid var(--ink-soft); border-radius: 3px;
+  padding: 7px 13px; min-height: 36px; cursor: pointer; display: inline-flex; align-items: center }
+button:hover, .filebtn:hover { background: var(--sky) }
+button:focus-visible, input:focus-visible, a:focus-visible, .filebtn:focus-within { outline: 2px solid var(--ochre); outline-offset: 2px }
+button.go { background: var(--ink); color: var(--paper); border-color: var(--ink) }
+button.go:hover { background: var(--ink-soft) }
+.filebtn input { position: absolute; opacity: 0; width: 1px; height: 1px }
+.chips { display: flex; flex-wrap: wrap; gap: 6px }
+.chips button { font-size: 13px; padding: 4px 10px; min-height: 30px; border-color: var(--rule) }
+.chips button[aria-pressed=true] { background: var(--ochre); color: var(--ochre-ink); border-color: var(--ochre) }
+.ask input[type=text] { flex: 1 1 220px; min-width: 0; font: 400 15px var(--body); color: var(--ink); background: var(--sheet);
+  border: 1px solid var(--ink-soft); border-radius: 3px; padding: 8px 10px; min-height: 38px }
+.note { color: var(--ink-soft); font-size: 13px; margin: 0; max-width: 70ch }
+.note a { color: var(--ink) }
+.err { color: var(--warn) }
+/* clean mode: only the drawing, for recording */
+body.clean .wrap { max-width: none; padding: 0; gap: 0 }
+body.clean .wrap > :not(#view), body.clean #view > :not(.stage), body.clean .block { display: none }
+body.clean #view, body.clean .stage { height: 100%; min-height: 0; border: 0; border-radius: 0 }
+body.clean .wrap { height: 100% }

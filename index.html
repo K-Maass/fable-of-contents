@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pull-Apart</title>
+<meta name="description" content="3D models you can turn, pull apart and step through part by part.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top"><a href="#">Pull-Apart</a><span>exploded views you can ask about</span></header>
+
+  <section id="gallery">
+    <h1>Pick something to take apart</h1>
+    <p class="sub">Each model is a parts list. The page draws it, pulls it apart in order and explains what every part does.</p>
+    <div class="cards" id="cards"></div>
+    <div class="row">
+      <label class="filebtn">Open a model file<input type="file" id="file" accept=".json,application/json"></label>
+      <span class="note">Models made with the Claude Code skill in this project are saved as files you can open here.</span>
+    </div>
+  </section>
+
+  <section id="view" hidden>
+    <div>
+      <h1 id="title">Model</h1>
+      <p class="sub" id="sub"></p>
+    </div>
+    <div class="stage" id="stage">
+      <div class="block" id="block"></div>
+      <div class="callout" id="callout" hidden></div>
+      <button id="exitclean" hidden>Show controls</button>
+    </div>
+    <div class="row">
+      <label class="lab" for="apart">Pull apart</label>
+      <input type="range" id="apart" min="0" max="1000" value="0">
+    </div>
+    <div class="step" aria-live="polite">
+      <span class="lab" id="stepn">Explanation</span>
+      <h2 id="stepname">How it works</h2>
+      <p id="steptext"></p>
+      <div class="row">
+        <button id="tour" class="go">Start tour</button>
+        <button id="prev">Back</button>
+        <button id="next">Next part</button>
+        <button id="whole">Put it together</button>
+        <button id="clean" title="Only the model, for recording. Press C to switch.">Hide controls</button>
+      </div>
+    </div>
+    <div class="chips" id="chips" aria-label="Parts"></div>
+    <div class="ask" id="ask" hidden>
+      <span class="lab">Ask for something else</span>
+      <div class="row">
+        <input type="text" id="q" placeholder="A bicycle gear shifter" aria-label="What do you want taken apart?">
+        <button id="mic" hidden>Speak</button>
+        <button id="askbtn" class="go">Build it</button>
+      </div>
+      <p class="note" id="askstate">Claude builds the model. It uses your own Claude usage and asks you first. A model can take up to a minute.</p>
+    </div>
+    <p class="note" id="modelnote"></p>
+    <p class="note" id="sources"></p>
+  </section>
+
+  <p class="note err" id="err" hidden></p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="viewer.js"></script>
+</body>
+</html>

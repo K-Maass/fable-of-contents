@@ -1,0 +1,733 @@
+{
+ "title": "Graphics card",
+ "size": "300 x 120 x 48 mm",
+ "summary": "A generic three-fan graphics card: where the heat goes, and what sits under the cooler.",
+ "note": "A generic three-fan card, not a specific product. The model and its explanation were written by Claude and have not been checked against a source.",
+ "parts": [
+  {
+   "id": "fans",
+   "name": "Fans",
+   "stage": 0,
+   "explode": [
+    0,
+    150,
+    0
+   ],
+   "at": [
+    [
+     -95,
+     41,
+     0
+    ],
+    [
+     0,
+     41,
+     0
+    ],
+    [
+     95,
+     41,
+     0
+    ]
+   ],
+   "spin": 40,
+   "shapes": [
+    {
+     "type": "cyl",
+     "r": 14,
+     "h": 8,
+     "material": "plastic"
+    },
+    {
+     "type": "cyl",
+     "r": 9,
+     "h": 8.6,
+     "material": "steel"
+    },
+    {
+     "type": "extrude",
+     "outline": [
+      [
+       13,
+       -6
+      ],
+      [
+       28,
+       -11
+      ],
+      [
+       41,
+       -7
+      ],
+      [
+       42,
+       3
+      ],
+      [
+       30,
+       9
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "h": 1.3,
+     "rot": [
+      24,
+      0,
+      0
+     ],
+     "radial": 9,
+     "material": "plastic"
+    },
+    {
+     "type": "torus",
+     "R": 42.6,
+     "r": 1.3,
+     "axis": "y",
+     "material": "plastic"
+    }
+   ]
+  },
+  {
+   "id": "shroud",
+   "name": "Shroud",
+   "stage": 1,
+   "explode": [
+    0,
+    112,
+    0
+   ],
+   "pos": [
+    0,
+    43,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "plate",
+     "size": [
+      300,
+      6,
+      120
+     ],
+     "round": 12,
+     "material": "plastic",
+     "holes": [
+      {
+       "x": -95,
+       "z": 0,
+       "r": 45
+      },
+      {
+       "x": 0,
+       "z": 0,
+       "r": 45
+      },
+      {
+       "x": 95,
+       "z": 0,
+       "r": 45
+      }
+     ]
+    },
+    {
+     "type": "plate",
+     "size": [
+      300,
+      26,
+      3
+     ],
+     "pos": [
+      0,
+      -16,
+      58.5
+     ],
+     "material": "plastic"
+    },
+    {
+     "type": "plate",
+     "size": [
+      300,
+      26,
+      3
+     ],
+     "pos": [
+      0,
+      -16,
+      -58.5
+     ],
+     "material": "plastic"
+    }
+   ]
+  },
+  {
+   "id": "fins",
+   "name": "Cooling fins",
+   "stage": 2,
+   "explode": [
+    0,
+    74,
+    0
+   ],
+   "pos": [
+    -133.5,
+    26,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "box",
+     "size": [
+      0.7,
+      26,
+      108
+     ],
+     "array": {
+      "count": 90,
+      "step": [
+       3,
+       0,
+       0
+      ]
+     },
+     "material": "aluminium"
+    }
+   ]
+  },
+  {
+   "id": "pipes",
+   "name": "Heat pipes",
+   "stage": 3,
+   "explode": [
+    0,
+    44,
+    0
+   ],
+   "at": [
+    [
+     0,
+     0,
+     -24
+    ],
+    [
+     0,
+     0,
+     -12
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     12
+    ],
+    [
+     0,
+     0,
+     24
+    ]
+   ],
+   "shapes": [
+    {
+     "type": "tube",
+     "r": 3,
+     "material": "copper",
+     "path": [
+      [
+       -128,
+       20,
+       0
+      ],
+      [
+       -70,
+       20,
+       0
+      ],
+      [
+       -48,
+       12.5,
+       0
+      ],
+      [
+       8,
+       12.5,
+       0
+      ],
+      [
+       32,
+       20,
+       0
+      ],
+      [
+       136,
+       20,
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "plate",
+   "name": "Cold plate",
+   "stage": 4,
+   "explode": [
+    0,
+    22,
+    0
+   ],
+   "pos": [
+    -20,
+    8,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "plate",
+     "size": [
+      62,
+      3,
+      62
+     ],
+     "round": 4,
+     "material": "copper"
+    }
+   ]
+  },
+  {
+   "id": "gpu",
+   "name": "Graphics chip",
+   "stage": 5,
+   "explode": [
+    0,
+    -20,
+    0
+   ],
+   "pos": [
+    -20,
+    4.9,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "plate",
+     "size": [
+      46,
+      1.2,
+      46
+     ],
+     "round": 1.5,
+     "material": "substrate"
+    },
+    {
+     "type": "box",
+     "size": [
+      26,
+      0.9,
+      26
+     ],
+     "pos": [
+      0,
+      1,
+      0
+     ],
+     "material": "die"
+    }
+   ]
+  },
+  {
+   "id": "vram",
+   "name": "Memory chips",
+   "stage": 5,
+   "explode": [
+    0,
+    -26,
+    0
+   ],
+   "at": [
+    [
+     -44,
+     4.9,
+     35
+    ],
+    [
+     -28,
+     4.9,
+     35
+    ],
+    [
+     -12,
+     4.9,
+     35
+    ],
+    [
+     4,
+     4.9,
+     35
+    ],
+    [
+     14,
+     4.9,
+     18
+    ],
+    [
+     14,
+     4.9,
+     2
+    ],
+    [
+     14,
+     4.9,
+     -14
+    ],
+    [
+     14,
+     4.9,
+     -30
+    ]
+   ],
+   "shapes": [
+    {
+     "type": "box",
+     "size": [
+      13,
+      1.2,
+      11
+     ],
+     "material": "chip"
+    }
+   ]
+  },
+  {
+   "id": "vrm",
+   "name": "Power stages",
+   "stage": 5,
+   "explode": [
+    0,
+    -26,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "box",
+     "size": [
+      9,
+      6,
+      9
+     ],
+     "pos": [
+      -62,
+      7.3,
+      -40
+     ],
+     "array": {
+      "count": 8,
+      "step": [
+       0,
+       0,
+       11.4
+      ]
+     },
+     "material": "choke"
+    },
+    {
+     "type": "box",
+     "size": [
+      9,
+      6,
+      9
+     ],
+     "pos": [
+      38,
+      7.3,
+      -34
+     ],
+     "array": {
+      "count": 6,
+      "step": [
+       0,
+       0,
+       11.4
+      ]
+     },
+     "material": "choke"
+    },
+    {
+     "type": "cyl",
+     "r": 3,
+     "h": 7,
+     "pos": [
+      -75,
+      7.8,
+      -40
+     ],
+     "array": {
+      "count": 8,
+      "step": [
+       0,
+       0,
+       11.4
+      ]
+     },
+     "material": "aluminium"
+    }
+   ]
+  },
+  {
+   "id": "power",
+   "name": "Power connector",
+   "stage": 5,
+   "explode": [
+    0,
+    -26,
+    22
+   ],
+   "pos": [
+    44,
+    9.3,
+    44
+   ],
+   "shapes": [
+    {
+     "type": "box",
+     "size": [
+      22,
+      10,
+      9
+     ],
+     "material": "plastic"
+    }
+   ]
+  },
+  {
+   "id": "pcb",
+   "name": "Circuit board",
+   "stage": 5,
+   "explode": [
+    0,
+    -34,
+    0
+   ],
+   "pos": [
+    -43,
+    3.5,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "plate",
+     "size": [
+      210,
+      1.6,
+      104
+     ],
+     "round": 3,
+     "material": "pcb"
+    },
+    {
+     "type": "box",
+     "size": [
+      86,
+      1.6,
+      8
+     ],
+     "pos": [
+      -32,
+      0,
+      -56
+     ],
+     "material": "gold"
+    }
+   ]
+  },
+  {
+   "id": "ports",
+   "name": "Display ports",
+   "stage": 5,
+   "explode": [
+    -22,
+    -34,
+    0
+   ],
+   "at": [
+    [
+     -141,
+     7.4,
+     -33
+    ],
+    [
+     -141,
+     7.4,
+     -11
+    ],
+    [
+     -141,
+     7.4,
+     11
+    ],
+    [
+     -141,
+     7.4,
+     33
+    ]
+   ],
+   "shapes": [
+    {
+     "type": "box",
+     "size": [
+      14,
+      6,
+      17
+     ],
+     "material": "steel"
+    }
+   ]
+  },
+  {
+   "id": "bracket",
+   "name": "Slot bracket",
+   "stage": 5,
+   "explode": [
+    -64,
+    -12,
+    0
+   ],
+   "pos": [
+    -150.6,
+    17,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    90
+   ],
+   "shapes": [
+    {
+     "type": "plate",
+     "size": [
+      42,
+      1,
+      120
+     ],
+     "round": 2,
+     "material": "steel",
+     "holes": [
+      {
+       "x": 10,
+       "z": -34,
+       "w": 9,
+       "d": 22
+      },
+      {
+       "x": 10,
+       "z": 0,
+       "w": 9,
+       "d": 22
+      },
+      {
+       "x": 10,
+       "z": 34,
+       "w": 9,
+       "d": 22
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "back",
+   "name": "Backplate",
+   "stage": 5,
+   "explode": [
+    0,
+    -72,
+    0
+   ],
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "shapes": [
+    {
+     "type": "plate",
+     "size": [
+      298,
+      2,
+      118
+     ],
+     "round": 10,
+     "material": "anodised",
+     "holes": [
+      {
+       "x": 105,
+       "z": 0,
+       "w": 60,
+       "d": 70
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "part": "fans",
+   "say": "Three fans pull room air in and push it down through the metal fins underneath."
+  },
+  {
+   "part": "shroud",
+   "say": "The plastic shroud holds the fans and steers the air, so it has to pass through the fins on its way out."
+  },
+  {
+   "part": "fins",
+   "say": "Dozens of thin aluminium fins give the heat a large surface to leave from. Air moving between them carries it away."
+  },
+  {
+   "part": "pipes",
+   "say": "Copper heat pipes move heat sideways along the card. A liquid inside boils at the hot end, travels as vapour and turns back to liquid at the cool end."
+  },
+  {
+   "part": "plate",
+   "say": "The copper cold plate presses against the graphics chip and takes up its heat."
+  },
+  {
+   "part": "gpu",
+   "say": "The graphics chip does the calculating. Nearly all the electricity it uses ends up as heat, which is why the cooler is the largest part of the card."
+  },
+  {
+   "part": "vram",
+   "say": "Memory chips sit close around it. They hold what the chip is working on, such as game textures or an AI model."
+  },
+  {
+   "part": "vrm",
+   "say": "The power stages turn the 12 volts from the power supply into roughly 1 volt at a very high current for the chip."
+  },
+  {
+   "part": "power",
+   "say": "This connector brings most of the card's power straight from the power supply."
+  },
+  {
+   "part": "pcb",
+   "say": "The circuit board connects everything. Its gold contacts plug into the motherboard, which carries the data and a small share of the power."
+  },
+  {
+   "part": "ports",
+   "say": "The display ports send the finished picture to your screens."
+  },
+  {
+   "part": "bracket",
+   "say": "The steel bracket screws the card to the computer case."
+  },
+  {
+   "part": "back",
+   "say": "The backplate stiffens the board so the heavy cooler doesn't bend it."
+  }
+ ]
+}
