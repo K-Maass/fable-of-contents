@@ -1,4 +1,4 @@
-# Pull-Apart
+# Fable of Contents
 
 A web page that draws a 3D model from a parts list, pulls it apart in order and explains each part. Models are plain JSON files, written by an AI from a description.
 

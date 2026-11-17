@@ -15,8 +15,8 @@ for m in index:
     p = os.path.join(root, "models", m["id"] + ".jpg")
     if os.path.exists(p): thumbs[m["id"]] = "data:image/jpeg;base64," + base64.b64encode(open(p, "rb").read()).decode()
 data = json.dumps({"index": index, "models": models, "thumbs": thumbs}).replace("</", "<\\/")
-page = (f'<title>Pull-Apart</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n{font}\n<style>\n{read("style.css")}</style>\n{body}'
-        f'<script>window.PULL_APART_MODELS = {data};\nwindow.PULL_APART_PROMPT = {json.dumps(read("prompt.txt"))};</script>\n<script>\n{read("viewer.js")}</script>\n')
+page = (f'<title>Fable of Contents</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n{font}\n<style>\n{read("style.css")}</style>\n{body}'
+        f'<script>window.FABLE_MODELS = {data};\nwindow.FABLE_PROMPT = {json.dumps(read("prompt.txt"))};</script>\n<script>\n{read("viewer.js")}</script>\n')
 os.makedirs(os.path.join(root, "dist"), exist_ok=True)
 open(os.path.join(root, "dist", "claude-page.html"), "w", encoding="utf-8").write(page)
 print("dist/claude-page.html", len(page) // 1024, "KB,", len(models), "models")

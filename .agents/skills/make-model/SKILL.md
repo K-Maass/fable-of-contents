@@ -1,6 +1,6 @@
 ---
 name: make-model
-description: "Build a new pull-apart 3D model from a description and add it to this project's gallery. Use when asked to make, add or model something for Pull-Apart, for example 'make a model of a jet engine' or 'add a door lock'. Writes models/<id>.json, checks and renders it, and updates the gallery list."
+description: "Build a new pull-apart 3D model from a description and add it to this project's gallery. Use when asked to make, add or model something for Fable of Contents, for example 'make a model of a jet engine' or 'add a door lock'. Writes models/<id>.json, checks and renders it, and updates the gallery list."
 ---
 
 # Make a model

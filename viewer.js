@@ -1,4 +1,4 @@
-/* Pull-Apart: draws a model from a parts list, pulls it apart, and explains it part by part.
+/* Fable of Contents: draws a model from a parts list, pulls it apart, and explains it part by part.
    One file, no build step. Needs three.js r128 and its OrbitControls loaded first. */
 "use strict";
 (function () {
@@ -260,7 +260,7 @@ function tick(now) {
 requestAnimationFrame(tick);
 
 /* ---------- gallery and routing ---------- */
-const embedded = window.PULL_APART_MODELS || null; let index = [];
+const embedded = window.FABLE_MODELS || null; let index = [];
 const getJSON = url => fetch(url, { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(url + " " + r.status); return r.json(); });
 function open(spec) { $("gallery").hidden = true; $("view").hidden = false; resize(); build(spec);
   if (params.get("open") === "1") { $("apart").value = 1000; target = 1; place(1); } if (params.get("clean") === "1") clean(true); }
@@ -288,7 +288,7 @@ $("file").addEventListener("change", e => { const f = e.target.files[0]; if (!f)
 /* ---------- inside Claude: build new models, read aloud, listen ---------- */
 (async function claude() {
   const use = window.claude && window.claude.use ? n => window.claude.use(n).catch(() => null) : () => Promise.resolve(null);
-  const rules = window.PULL_APART_PROMPT, sample = rules ? await use("sample") : null;
+  const rules = window.FABLE_PROMPT, sample = rules ? await use("sample") : null;
   if (sample) {
     const ask = $("ask"), q = $("q"), btn = $("askbtn"), state = $("askstate"); ask.hidden = false; let ctl = null;
     const run = async () => {
